@@ -16,7 +16,9 @@ import org.testng.annotations.Test;
 		   
 		    @Test
 		    public void testCommerceJSDemoStore() {
-		        driver.findElement(By.linkText("Shop now")).click();
+		        WebElement shpnow = driver.findElement(By.linkText("Shop now"));
+		        shpnow.click();
+		        System.out.println("Shop now clicked successfully");
 		        
 		        driver.findElement(By.xpath("(//p[text()='Products'])[2]")).click();
 		        driver.findElement(By.xpath("//p[text()='Hair Beauty Bath']")).click();

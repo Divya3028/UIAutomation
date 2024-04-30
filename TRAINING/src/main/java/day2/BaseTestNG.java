@@ -16,6 +16,7 @@ public class BaseTestNG {
 	        driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	        driver.get("https://commercejs-demo-store.netlify.app/");
+	        System.out.println("Launched URL successfully");
 	    }
 	 @AfterMethod
 	    public void tearDown() {
